@@ -11,7 +11,7 @@ const Person = (props) => {
         <p>{age} years</p>
       </div>
       <button onClick={() => setColor('red')}>
-        <AiOutlineHeart style={"background-color"="red"} width="20px" height="20px" />
+        <AiOutlineHeart baseProfile="red" width="20px" height="20px" />
       </button>
     </div>
   )
