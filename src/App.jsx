@@ -3,6 +3,7 @@ import Person from './components/Person'
 import data from './data'
 const App = () => {
   const [dummyData, setData] = useState(data)
+  
   return (
     <div className="main">
       <div className="container">
