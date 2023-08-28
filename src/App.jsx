@@ -7,15 +7,17 @@ const App = () => {
     setData([])
   }
   return (
-    <div className="container">
-      <h3>{dummyData.length} Close Friends</h3>
-      {dummyData.map((friend) => {
-        return <Person {...friend} key={friend.id} />
-      })}
-      <button className="btn" onClick={handleClick}>
-        Remove All
-      </button>
-    </div>
+    <main>
+      <div className="container">
+        <h3>{dummyData.length} Close Friends</h3>
+        {dummyData.map((friend) => {
+          return <Person {...friend} key={friend.id} />
+        })}
+        <button className="btn" onClick={handleClick} style={{ width: '100%' }}>
+          Remove All
+        </button>
+      </div>
+    </main>
   )
 }
 export default App
