@@ -7,20 +7,11 @@ const App = () => {
     setData([])
   }
   return (
-    <div
-      className="container"
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      <div className="container">
-        <h3>{dummyData.length} Close Friends</h3>
-        {dummyData.map((friend) => {
-          return <Person {...friend} key={friend.id} />
-        })}
-      </div>
+    <div className="container">
+      <h3>{dummyData.length} Close Friends</h3>
+      {dummyData.map((friend) => {
+        return <Person {...friend} key={friend.id} />
+      })}
       <button className="btn" onClick={handleClick}>
         Remove All
       </button>
